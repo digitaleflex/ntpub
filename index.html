@@ -1,9 +1,55 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Netpub - Transformation Digitale Haut de Gamme</title>
+
+    <title>Netpub - Transformation Digitale Haut de Gamme | Agence Marketing Digital</title>
+
+    <meta name="description"
+        content="Netpub est votre agence de transformation digitale haut de gamme. Nous aidons les entreprises à améliorer leur visibilité en ligne, générer des leads qualifiés et augmenter leurs ventes grâce à la création de sites web, tunnels de vente, SEO local, e-commerce et publicité digitale.">
+
+    <meta name="keywords"
+        content="Netpub, transformation digitale, agence marketing digital, création site web, tunnel de vente, SEO local, e-commerce, publicité digitale, visibilité en ligne, leads qualifiés, augmenter ventes, stratégie digitale, marketing numérique, agence web, développement web, branding, optimisation SEO, marketing de contenu, réseaux sociaux">
+
+    <meta name="author" content="Netpub">
+
+    <meta name="robots" content="index, follow">
+    <!-- Indique aux moteurs de recherche d'indexer la page et de suivre les liens -->
+
+    <link rel="canonical" href="https://netpub.metasucces.com/"> <!-- URL réelle de votre site -->
+
+
+
+    <!-- Open Graph Tags pour le partage sur les réseaux sociaux (Facebook, LinkedIn, etc.) -->
+
+    <meta property="og:title" content="Netpub - Transformation Digitale Haut de Gamme">
+
+    <meta property="og:description"
+        content="Découvrez comment Netpub peut transformer votre présence digitale en une véritable machine à convertir. Création de sites, tunnels de vente, SEO, e-commerce.">
+
+    <meta property="og:image" content="https://netpub.metasucces.com/netpub-share-image.jpeg">
+    <!-- Remplacez par l'URL d'une image de partage pertinente -->
+
+    <meta property="og:url" content="https://netpub.metasucces.com/"> <!-- URL réelle de votre site -->
+
+    <meta property="og:type" content="website">
+
+    <!-- Twitter Card Tags pour le partage sur Twitter -->
+
+    <meta name="twitter:card" content="summary_large_image">
+
+    <meta name="twitter:title" content="Netpub - Transformation Digitale Haut de Gamme">
+
+    <meta name="twitter:description"
+        content="Découvrez comment Netpub peut transformer votre présence digitale en une véritable machine à convertir. Création de sites, tunnels de vente, SEO, e-commerce.">
+
+    <meta name="twitter:image" content="https://netpub.metasucces.com/images/netpub-share-image.jpeg">
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="https://netpub.metasucces.com/images/netpub-share-image.jpeg">
+
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
@@ -11,14 +57,14 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap');
-        
+
         :root {
             --electric-blue: #00f0ff;
             --neon-purple: #b400ff;
             --deep-black: #0a0a0a;
             --light-white: #f5f5f7;
         }
-        
+
         body {
             font-family: 'Montserrat', sans-serif;
             background-color: var(--deep-black);
@@ -26,60 +72,60 @@
             overflow-x: hidden;
             scroll-behavior: smooth;
         }
-        
+
         .hero-gradient {
             background: linear-gradient(135deg, rgba(0, 0, 20, 0.9) 0%, rgba(10, 0, 30, 0.9) 100%);
         }
-        
+
         .glow-effect {
             text-shadow: 0 0 10px rgba(180, 0, 255, 0.7);
         }
-        
+
         .glow-effect-blue {
             text-shadow: 0 0 10px rgba(0, 240, 255, 0.7);
         }
-        
+
         .card-hover {
             transition: all 0.3s ease;
         }
-        
+
         .card-hover:hover {
             transform: translateY(-5px);
             box-shadow: 0 10px 25px rgba(0, 240, 255, 0.3);
         }
-        
+
         .service-card {
             background: rgba(15, 15, 25, 0.7);
             backdrop-filter: blur(10px);
             border: 1px solid rgba(180, 0, 255, 0.2);
             transition: all 0.4s ease;
         }
-        
+
         .service-card:hover {
             border-color: var(--electric-blue);
             box-shadow: 0 0 20px rgba(0, 240, 255, 0.4);
         }
-        
+
         .testimonial-card {
             background: linear-gradient(145deg, rgba(20, 10, 40, 0.7) 0%, rgba(10, 20, 40, 0.7) 100%);
             border-left: 3px solid var(--neon-purple);
         }
-        
+
         .faq-item {
             background: rgba(20, 20, 40, 0.7);
             border-bottom: 1px solid rgba(180, 0, 255, 0.3);
         }
-        
+
         .cta-gradient {
             background: linear-gradient(90deg, rgba(180, 0, 255, 0.2) 0%, rgba(0, 240, 255, 0.2) 100%);
         }
-        
+
         .btn-neon {
             position: relative;
             overflow: hidden;
             z-index: 1;
         }
-        
+
         .btn-neon::before {
             content: '';
             position: absolute;
@@ -91,26 +137,26 @@
             transition: 0.5s;
             z-index: -1;
         }
-        
+
         .btn-neon:hover::before {
             left: 100%;
         }
-        
+
         .btn-purple {
             background: rgba(180, 0, 255, 0.2);
             border: 1px solid var(--neon-purple);
         }
-        
+
         .btn-blue {
             background: rgba(0, 240, 255, 0.2);
             border: 1px solid var(--electric-blue);
         }
-        
+
         .portfolio-item {
             position: relative;
             overflow: hidden;
         }
-        
+
         .portfolio-overlay {
             position: absolute;
             top: 0;
@@ -125,20 +171,20 @@
             justify-content: center;
             align-items: center;
         }
-        
+
         .portfolio-item:hover .portfolio-overlay {
             opacity: 1;
         }
-        
+
         .filter-btn {
             transition: all 0.3s ease;
         }
-        
+
         .filter-btn.active {
             background: rgba(180, 0, 255, 0.3);
             border-color: var(--neon-purple);
         }
-        
+
         #canvas-container {
             position: absolute;
             top: 0;
@@ -147,16 +193,21 @@
             height: 100%;
             z-index: -1;
         }
-        
+
         .marquee {
             animation: scroll 30s linear infinite;
         }
-        
+
         @keyframes scroll {
-            0% { transform: translateY(0); }
-            100% { transform: translateY(-50%); }
+            0% {
+                transform: translateY(0);
+            }
+
+            100% {
+                transform: translateY(-50%);
+            }
         }
-        
+
         .counter {
             font-variant-numeric: tabular-nums;
         }
@@ -169,13 +220,15 @@
         }
     </style>
 </head>
+
 <body>
     <!-- Navigation -->
     <nav class="fixed w-full z-50 bg-black bg-opacity-80 backdrop-filter backdrop-blur-md">
         <div class="container mx-auto px-6 py-4">
             <div class="flex justify-between items-center">
                 <div class="text-2xl font-bold">
-                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-blue-500">Netpub</span>
+                    <span
+                        class="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-blue-500">Netpub</span>
                 </div>
                 <div class="hidden md:flex space-x-8">
                     <a href="#services" class="text-gray-300 hover:text-white transition">Services</a>
@@ -184,11 +237,13 @@
                     <a href="#faq" class="text-gray-300 hover:text-white transition">FAQ</a>
                 </div>
                 <div class="flex space-x-4">
-                    <a href="#" class="btn-neon btn-purple px-4 py-2 rounded-full flex items-center space-x-2">
+                    <a href="https://m.me/718880621299556?ref=w42216004"
+                        class="btn-neon btn-purple px-4 py-2 rounded-full flex items-center space-x-2">
                         <i class="fab fa-facebook-messenger"></i>
                         <span>Messenger</span>
                     </a>
-                    <a href="#" class="btn-neon btn-blue px-4 py-2 rounded-full flex items-center space-x-2">
+                    <a href="https://ig.me/m/netp_ub?ref=w42213878"
+                        class="btn-neon btn-blue px-4 py-2 rounded-full flex items-center space-x-2">
                         <i class="fab fa-instagram"></i>
                         <span>Instagram</span>
                     </a>
@@ -197,38 +252,43 @@
         </div>
     </nav>
 
-<section class="relative min-h-screen flex items-center justify-center overflow-hidden pt-40 pb-32">
-    <div id="canvas-container"></div>
-    <div class="hero-gradient absolute inset-0"></div>
-    <div class="container mx-auto px-6 z-10">
-        <div class="max-w-4xl mx-auto text-center">
-            <h1 class="text-4xl md:text-6xl font-bold mb-10 glow-effect">
-                Vous avez un business… mais pas encore les résultats en ligne que vous méritez ?
-            </h1>
-            <p class="text-xl md:text-2xl mb-10 text-gray-300">
-                Découvrez comment améliorer votre visibilité, vendre plus, et convertir plus de clients en ligne — même sans être un expert du digital.
-            </p>
-            <div class="flex flex-col sm:flex-row justify-center gap-4">
-                <a href="#" class="btn-neon btn-purple px-8 py-4 rounded-full text-lg font-semibold flex items-center justify-center space-x-3">
-                    <i class="fab fa-facebook-messenger text-xl"></i>
-                    <span>Discuter sur Messenger</span>
-                </a>
-                <a href="#" class="btn-neon btn-blue px-8 py-4 rounded-full text-lg font-semibold flex items-center justify-center space-x-3">
-                    <i class="fab fa-instagram text-xl"></i>
-                    <span>Nous contacter sur Instagram</span>
-                </a>
+    <section class="relative min-h-screen flex items-center justify-center overflow-hidden pt-40 pb-32">
+        <div id="canvas-container"></div>
+        <div class="hero-gradient absolute inset-0"></div>
+        <div class="container mx-auto px-6 z-10">
+            <div class="max-w-4xl mx-auto text-center">
+                <h1 class="text-4xl md:text-6xl font-bold mb-10 glow-effect">
+                    Vous avez un business… mais pas encore les résultats en ligne que vous méritez ?
+                </h1>
+                <p class="text-xl md:text-2xl mb-10 text-gray-300">
+                    Découvrez comment améliorer votre visibilité, vendre plus, et convertir plus de clients en ligne —
+                    même sans être un expert du digital.
+                </p>
+                <div class="flex flex-col sm:flex-row justify-center gap-4">
+                    <a href="https://m.me/718880621299556?ref=w42216004"
+                        class="btn-neon btn-purple px-8 py-4 rounded-full text-lg font-semibold flex items-center justify-center space-x-3">
+                        <i class="fab fa-facebook-messenger text-xl"></i>
+                        <span>Discuter sur Messenger</span>
+                    </a>
+                    <a href="https://ig.me/m/netp_ub?ref=w42213878"
+                        class="btn-neon btn-blue px-8 py-4 rounded-full text-lg font-semibold flex items-center justify-center space-x-3">
+                        <i class="fab fa-instagram text-xl"></i>
+                        <span>Nous contacter sur Instagram</span>
+                    </a>
+                </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
     <!-- Frustrations Section -->
     <section class="py-20 bg-gradient-to-b from-black to-gray-900">
         <div class="container mx-auto px-6">
             <h2 class="text-3xl md:text-5xl font-bold text-center mb-16 glow-effect">
-                Ce qu'on voit chez <span class="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-blue-500">80% des entrepreneurs</span> aujourd'hui...
+                Ce qu'on voit chez <span
+                    class="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-blue-500">80% des
+                    entrepreneurs</span> aujourd'hui...
             </h2>
-            
+
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <!-- Frustration 1 -->
                 <div class="card-hover bg-gray-900 rounded-xl p-8 border border-gray-800">
@@ -236,50 +296,58 @@
                         <i class="fas fa-search-location"></i>
                     </div>
                     <h3 class="text-xl font-bold mb-3">Fiche Google sans vues</h3>
-                    <p class="text-gray-400">Votre entreprise n'apparaît pas dans les premières recherches locales, vous perdez des clients potentiels chaque jour.</p>
+                    <p class="text-gray-400">Votre entreprise n'apparaît pas dans les premières recherches locales, vous
+                        perdez des clients potentiels chaque jour.</p>
                 </div>
-                
+
                 <!-- Frustration 2 -->
                 <div class="card-hover bg-gray-900 rounded-xl p-8 border border-gray-800">
                     <div class="text-purple-400 text-4xl mb-4">
                         <i class="fas fa-shopping-cart"></i>
                     </div>
                     <h3 class="text-xl font-bold mb-3">Site qui ne convertit pas</h3>
-                    <p class="text-gray-400">Des visiteurs mais peu d'achats ? Votre site ne transforme pas suffisamment le trafic en clients.</p>
+                    <p class="text-gray-400">Des visiteurs mais peu d'achats ? Votre site ne transforme pas suffisamment
+                        le trafic en clients.</p>
                 </div>
-                
+
                 <!-- Frustration 3 -->
                 <div class="card-hover bg-gray-900 rounded-xl p-8 border border-gray-800">
                     <div class="text-blue-400 text-4xl mb-4">
                         <i class="fas fa-ad"></i>
                     </div>
                     <h3 class="text-xl font-bold mb-3">Campagnes pub qui attirent... mais ne vendent pas</h3>
-                    <p class="text-gray-400">Vous dépensez en publicité mais le ROI n'est pas au rendez-vous. Beaucoup de clics, peu de ventes.</p>
+                    <p class="text-gray-400">Vous dépensez en publicité mais le ROI n'est pas au rendez-vous. Beaucoup
+                        de clics, peu de ventes.</p>
                 </div>
-                
+
                 <!-- Frustration 4 -->
                 <div class="card-hover bg-gray-900 rounded-xl p-8 border border-gray-800">
                     <div class="text-purple-400 text-4xl mb-4">
                         <i class="fas fa-funnel-dollar"></i>
                     </div>
                     <h3 class="text-xl font-bold mb-3">Tunnels trop compliqués</h3>
-                    <p class="text-gray-400">Vos processus d'achat rebutent les clients avec trop d'étapes ou des interfaces peu intuitives.</p>
+                    <p class="text-gray-400">Vos processus d'achat rebutent les clients avec trop d'étapes ou des
+                        interfaces peu intuitives.</p>
                 </div>
-                
+
                 <!-- Frustration 5 -->
                 <div class="card-hover bg-gray-900 rounded-xl p-8 border border-gray-800">
                     <div class="text-blue-400 text-4xl mb-4">
                         <i class="fas fa-users-slash"></i>
                     </div>
                     <h3 class="text-xl font-bold mb-3">Clients qui partent chez la concurrence</h3>
-                    <p class="text-gray-400">Vos prospects visitent votre site mais finissent par acheter ailleurs, souvent à cause d'une expérience client décevante.</p>
+                    <p class="text-gray-400">Vos prospects visitent votre site mais finissent par acheter ailleurs,
+                        souvent à cause d'une expérience client décevante.</p>
                 </div>
-                
+
                 <!-- CTA Card -->
-                <div class="card-hover bg-gradient-to-br from-purple-900 to-blue-900 rounded-xl p-8 border border-purple-500 flex flex-col justify-center">
+                <div
+                    class="card-hover bg-gradient-to-br from-purple-900 to-blue-900 rounded-xl p-8 border border-purple-500 flex flex-col justify-center">
                     <h3 class="text-xl font-bold mb-3 text-white">Vous vous reconnaissez ?</h3>
-                    <p class="text-gray-200 mb-6">Ces problèmes ont des solutions. Nous aidons chaque jour des entrepreneurs comme vous à les résoudre.</p>
-                    <a href="#" class="btn-neon bg-white text-black px-6 py-3 rounded-full font-semibold text-center">
+                    <p class="text-gray-200 mb-6">Ces problèmes ont des solutions. Nous aidons chaque jour des
+                        entrepreneurs comme vous à les résoudre.</p>
+                    <a href="https://ig.me/m/netp_ub?ref=w42213878"
+                        class="btn-neon bg-white text-black px-6 py-3 rounded-full font-semibold text-center">
                         Obtenir une solution <i class="fas fa-arrow-right ml-2"></i>
                     </a>
                 </div>
@@ -291,12 +359,13 @@
     <section id="services" class="py-20 bg-black">
         <div class="container mx-auto px-6">
             <h2 class="text-3xl md:text-5xl font-bold text-center mb-4 glow-effect-blue">
-                Ce qu'on fait pour <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500">y remédier</span>
+                Ce qu'on fait pour <span
+                    class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500">y remédier</span>
             </h2>
             <p class="text-xl text-center text-gray-400 mb-16 max-w-3xl mx-auto">
                 Nos solutions sur-mesure transforment votre présence digitale en véritable machine à convertir.
             </p>
-            
+
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <!-- Service 1 -->
                 <div class="service-card rounded-xl p-8">
@@ -304,32 +373,36 @@
                         <i class="fas fa-map-marked-alt"></i>
                     </div>
                     <h3 class="text-xl font-bold mb-3">Optimisation de visibilité locale</h3>
-                    <p class="text-gray-400 mb-4">On positionne votre entreprise en tête des résultats Google Maps et des recherches locales.</p>
+                    <p class="text-gray-400 mb-4">On positionne votre entreprise en tête des résultats Google Maps et
+                        des recherches locales.</p>
                     <div class="flex items-center text-sm text-blue-400">
                         <i class="fas fa-check-circle mr-2"></i>
                         <span>Résultats : +200% de visibilité en moyenne</span>
                     </div>
-                    <a href="#" class="mt-6 inline-flex items-center text-blue-400 hover:text-blue-300 transition">
-                       Booster ma visibilité locale <i class="fas fa-arrow-right ml-2"></i>
+                    <a href="https://ig.me/m/netp_ub?ref=w42213878"
+                        class="mt-6 inline-flex items-center text-blue-400 hover:text-blue-300 transition">
+                        Booster ma visibilité locale <i class="fas fa-arrow-right ml-2"></i>
                     </a>
                 </div>
-                
+
                 <!-- Service 2 -->
                 <div class="service-card rounded-xl p-8">
                     <div class="text-purple-400 text-4xl mb-4">
                         <i class="fas fa-store"></i>
                     </div>
                     <h3 class="text-xl font-bold mb-3"> Création de site web & boutique e-commerce</h3>
-                    <p class="text-gray-400 mb-4">Des sites web modernes et boutiques en ligne performantes, conçus pour vendre 24h/24 avec une UX millimétrée.</p>
+                    <p class="text-gray-400 mb-4">Des sites web modernes et boutiques en ligne performantes, conçus pour
+                        vendre 24h/24 avec une UX millimétrée.</p>
                     <div class="flex items-center text-sm text-purple-400">
                         <i class="fas fa-check-circle mr-2"></i>
-                        <span>Résultats :  +150% de ventes en moyenne et image de marque renforcée.</span>
+                        <span>Résultats : +150% de ventes en moyenne et image de marque renforcée.</span>
                     </div>
-                    <a href="#" class="mt-6 inline-flex items-center text-purple-400 hover:text-purple-300 transition">
+                    <a href="https://ig.me/m/netp_ub?ref=w42213878"
+                        class="mt-6 inline-flex items-center text-purple-400 hover:text-purple-300 transition">
                         Lancer mon site ou ma boutique maintenant <i class="fas fa-arrow-right ml-2"></i>
                     </a>
                 </div>
-                
+
                 <!-- Service 3 -->
                 <div class="service-card rounded-xl p-8">
                     <div class="text-blue-400 text-4xl mb-4">
@@ -341,55 +414,62 @@
                         <i class="fas fa-check-circle mr-2"></i>
                         <span>Résultats : +300% de leads qualifiés</span>
                     </div>
-                    <a href="#" class="mt-6 inline-flex items-center text-blue-400 hover:text-blue-300 transition">
+                    <a href="https://ig.me/m/netp_ub?ref=w42213878"
+                        class="mt-6 inline-flex items-center text-blue-400 hover:text-blue-300 transition">
                         Je veux mon tunnel <i class="fas fa-arrow-right ml-2"></i>
                     </a>
                 </div>
-                
+
                 <!-- Service 4 -->
                 <div class="service-card rounded-xl p-8">
                     <div class="text-purple-400 text-4xl mb-4">
                         <i class="fas fa-bullseye"></i>
                     </div>
                     <h3 class="text-xl font-bold mb-3"> Publicité digitale qui vend (Meta Ads / Google Ads)</h3>
-                    <p class="text-gray-400 mb-4">Des campagnes qui vendent réellement, pas juste qui génèrent des clics inutiles.</p>
+                    <p class="text-gray-400 mb-4">Des campagnes qui vendent réellement, pas juste qui génèrent des clics
+                        inutiles.</p>
                     <div class="flex items-center text-sm text-purple-400">
                         <i class="fas fa-check-circle mr-2"></i>
                         <span>Résultats : ROAS boosté, trafic qualifié, conversions réelles.</span>
                     </div>
-                    <a href="#" class="mt-6 inline-flex items-center text-purple-400 hover:text-purple-300 transition">
+                    <a href="https://ig.me/m/netp_ub?ref=w42213878"
+                        class="mt-6 inline-flex items-center text-purple-400 hover:text-purple-300 transition">
                         Optimiser mes campagnes <i class="fas fa-arrow-right ml-2"></i>
                     </a>
                 </div>
-                
+
                 <!-- Service 5 -->
                 <div class="service-card rounded-xl p-8">
                     <div class="text-blue-400 text-4xl mb-4">
                         <i class="fas fa-chart-line"></i>
                     </div>
                     <h3 class="text-xl font-bold mb-3">Optimisation business & stratégie digitale</h3>
-                    <p class="text-gray-400 mb-4">On analyse votre business pour identifier les fuites et maximiser chaque euro investi.</p>
+                    <p class="text-gray-400 mb-4">On analyse votre business pour identifier les fuites et maximiser
+                        chaque euro investi.</p>
                     <div class="flex items-center text-sm text-blue-400">
                         <i class="fas fa-check-circle mr-2"></i>
                         <span>Résultats : +50% de rentabilité en moyenne</span>
                     </div>
-                    <a href="#" class="mt-6 inline-flex items-center text-blue-400 hover:text-blue-300 transition">
+                    <a href="https://ig.me/m/netp_ub?ref=w42213878"
+                        class="mt-6 inline-flex items-center text-blue-400 hover:text-blue-300 transition">
                         Demander un audit <i class="fas fa-arrow-right ml-2"></i>
                     </a>
                 </div>
-                
+
                 <!-- Service 6 -->
                 <div class="service-card rounded-xl p-8">
                     <div class="text-purple-400 text-4xl mb-4">
                         <i class="fas fa-photo-video"></i>
                     </div>
                     <h3 class="text-xl font-bold mb-3">Gestion des réseaux sociaux & création de contenu visuel</h3>
-                    <p class="text-gray-400 mb-4">Des visuels et vidéos qui captent l'attention, retiennent l'intérêt et déclenchent l'achat.</p>
+                    <p class="text-gray-400 mb-4">Des visuels et vidéos qui captent l'attention, retiennent l'intérêt et
+                        déclenchent l'achat.</p>
                     <div class="flex items-center text-sm text-purple-400">
                         <i class="fas fa-check-circle mr-2"></i>
                         <span>Résultats : CTR jusqu'à +300%</span>
                     </div>
-                    <a href="#" class="mt-6 inline-flex items-center text-purple-400 hover:text-purple-300 transition">
+                    <a href="https://ig.me/m/netp_ub?ref=w42213878"
+                        class="mt-6 inline-flex items-center text-purple-400 hover:text-purple-300 transition">
                         Créez votre vidéo ou votre visuel maintenant <i class="fas fa-arrow-right ml-2"></i>
                     </a>
                 </div>
@@ -401,21 +481,25 @@
     <section class="py-16 bg-gradient-to-r from-purple-900 to-blue-900">
         <div class="container mx-auto px-6 text-center">
             <div class="max-w-4xl mx-auto">
-                <div class="inline-flex items-center justify-center bg-black bg-opacity-30 px-8 py-4 rounded-full mb-6 border border-purple-400 border-opacity-50">
+                <div
+                    class="inline-flex items-center justify-center bg-black bg-opacity-30 px-8 py-4 rounded-full mb-6 border border-purple-400 border-opacity-50">
                     <i class="fas fa-users text-2xl text-white mr-3"></i>
                     <span class="text-xl font-semibold text-white">
-                        <span class="counter" data-target="50">0</span>+ entreprises & créateurs digitaux nous font confiance
+                        <span class="counter" data-target="50">0</span>+ entreprises & créateurs digitaux nous font
+                        confiance
                     </span>
                 </div>
                 <h3 class="text-2xl md:text-3xl font-bold text-white mb-6">
                     Rejoignez les entrepreneurs qui ont transformé leur business en ligne
                 </h3>
                 <div class="flex flex-col sm:flex-row justify-center gap-4">
-                    <a href="#" class="btn-neon btn-purple px-8 py-3 rounded-full text-lg font-semibold flex items-center justify-center space-x-3">
+                    <a href="https://m.me/718880621299556?ref=w42216004"
+                        class="btn-neon btn-purple px-8 py-3 rounded-full text-lg font-semibold flex items-center justify-center space-x-3">
                         <i class="fab fa-facebook-messenger"></i>
                         <span>Discuter maintenant</span>
                     </a>
-                    <a href="#" class="btn-neon bg-white text-black px-8 py-3 rounded-full text-lg font-semibold flex items-center justify-center space-x-3">
+                    <a href="https://ig.me/m/netp_ub?ref=w42213878"
+                        class="btn-neon bg-white text-black px-8 py-3 rounded-full text-lg font-semibold flex items-center justify-center space-x-3">
                         <i class="fas fa-chart-line"></i>
                         <span>Voir nos résultats</span>
                     </a>
@@ -428,93 +512,381 @@
     <section id="portfolio" class="py-20 bg-gray-900">
         <div class="container mx-auto px-6">
             <h2 class="text-3xl md:text-5xl font-bold text-center mb-4 glow-effect">
-                Notre <span class="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-blue-500">portfolio</span>
+                Notre <span
+                    class="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-blue-500">portfolio</span>
             </h2>
             <p class="text-xl text-center text-gray-400 mb-12 max-w-3xl mx-auto">
                 Découvrez des projets concrets qui ont transformé la présence digitale de nos clients.
             </p>
-            
+
             <!-- Filters -->
             <div class="flex flex-wrap justify-center gap-3 mb-12">
-                <button class="filter-btn active px-4 py-2 rounded-full border border-gray-700 text-white bg-gray-800" data-filter="all">Tous</button>
-                <button class="filter-btn px-4 py-2 rounded-full border border-gray-700 text-gray-300 hover:text-white" data-filter="ecommerce">E-commerce</button>
-                <button class="filter-btn px-4 py-2 rounded-full border border-gray-700 text-gray-300 hover:text-white" data-filter="tunnel">Tunnel de vente</button>
-                <button class="filter-btn px-4 py-2 rounded-full border border-gray-700 text-gray-300 hover:text-white" data-filter="ads">Publicité</button>
-                <button class="filter-btn px-4 py-2 rounded-full border border-gray-700 text-gray-300 hover:text-white" data-filter="branding">Branding</button>
-                <button class="filter-btn px-4 py-2 rounded-full border border-gray-700 text-gray-300 hover:text-white" data-filter="seo">SEO Local</button>
+                <button class="filter-btn active px-4 py-2 rounded-full border border-gray-700 text-white bg-gray-800"
+                    data-filter="all">Tous</button>
+                <button class="filter-btn px-4 py-2 rounded-full border border-gray-700 text-gray-300 hover:text-white"
+                    data-filter="web">Site web</button>
+                <button class="filter-btn px-4 py-2 rounded-full border border-gray-700 text-gray-300 hover:text-white"
+                    data-filter="ecommerce">E-commerce</button>
+                <button class="filter-btn px-4 py-2 rounded-full border border-gray-700 text-gray-300 hover:text-white"
+                    data-filter="tunnel">Tunnel de vente</button>
+                <button class="filter-btn px-4 py-2 rounded-full border border-gray-700 text-gray-300 hover:text-white"
+                    data-filter="ads">Publicité</button>
+                <button class="filter-btn px-4 py-2 rounded-full border border-gray-700 text-gray-300 hover:text-white"
+                    data-filter="branding">Branding</button>
             </div>
-            
-            <!-- Portfolio Grid -->
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                <!-- Item 1 -->
-                <div class="portfolio-item rounded-xl overflow-hidden" data-category="ecommerce">
-                    <img src="https://images.unsplash.com/photo-1556740738-b6a63e27c4df?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="E-commerce project" class="w-full h-64 object-cover">
-                    <div class="portfolio-overlay">
-                        <h3 class="text-xl font-bold text-white mb-2">Boutique de cosmétiques</h3>
-                        <p class="text-gray-300 text-center px-4 mb-4">+120% de ventes en 3 mois</p>
-                        <a href="#" class="px-4 py-2 bg-blue-500 rounded-full text-sm font-semibold">Voir le projet</a>
-                    </div>
-                </div>
-                
-                <!-- Item 2 -->
-                <div class="portfolio-item rounded-xl overflow-hidden" data-category="tunnel">
-                    <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Sales funnel project" class="w-full h-64 object-cover">
-                    <div class="portfolio-overlay">
-                        <h3 class="text-xl font-bold text-white mb-2">Tunnel de formation</h3>
-                        <p class="text-gray-300 text-center px-4 mb-4">+300% de conversions</p>
-                        <a href="#" class="px-4 py-2 bg-blue-500 rounded-full text-sm font-semibold">Voir le projet</a>
-                    </div>
-                </div>
-                
-                <!-- Item 3 -->
-                <div class="portfolio-item rounded-xl overflow-hidden" data-category="ads">
-                    <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Ads project" class="w-full h-64 object-cover">
-                    <div class="portfolio-overlay">
-                        <h3 class="text-xl font-bold text-white mb-2">Campagne Instagram</h3>
-                        <p class="text-gray-300 text-center px-4 mb-4">ROI multiplié par 8 en 6 semaines</p>
-                        <a href="#" class="px-4 py-2 bg-blue-500 rounded-full text-sm font-semibold">Voir le projet</a>
-                    </div>
-                </div>
+            <div class="portfolio-grid">
+                <!-- Portfolio Grid -->
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <!-- Les 6 images spécifiées, dans l'ordre demandé -->
 
+                    <!-- 1. gagnépub.png (Branding) -->
+                    <div class="portfolio-item rounded-xl overflow-hidden" data-category="branding"
+                        data-filename="gagnépub.png" data-full-src="images/gagnépub.png">
+                        <img src="images/gagnépub.png" alt="Gagné Pub Branding" class="w-full h-64 object-cover">
+                        <div class="portfolio-overlay">
+                            <h3 class="text-xl font-bold text-white mb-2">Miniature YouTube</h3>
+                            <p class="text-gray-300 text-center px-4 mb-4">Augmentation du taux de clics (CTR) de +70%
+                            </p>
+                            <button
+                                class="view-project-btn px-4 py-2 bg-blue-500 rounded-full text-sm font-semibold">Voir
+                                le projet</button>
+                        </div>
+                    </div>
+
+                    <!-- 2. Masterclass Instagram.png (Tunnel de vente) -->
+                    <div class="portfolio-item rounded-xl overflow-hidden" data-category="tunnel"
+                        data-filename="Masterclass Instagram.png"
+                        data-full-src="images/Masterclass Instagram - Attirez des clients même avec -1000 abonnés.png">
+                        <img src="images/Masterclass Instagram.png" alt="Masterclass Instagram"
+                            class="w-full h-64 object-cover">
+                        <div class="portfolio-overlay">
+                            <h3 class="text-xl font-bold text-white mb-2">Tunnel Masterclass Instagram</h3>
+                            <p class="text-gray-300 text-center px-4 mb-4">Taux de conversion du tunnel : +300%</p>
+                            <button
+                                class="view-project-btn px-4 py-2 bg-blue-500 rounded-full text-sm font-semibold">Voir
+                                le projet</button>
+                        </div>
+                    </div>
+
+                    <!-- 3. Plomberie.png (Site web) -->
+                    <div class="portfolio-item rounded-xl overflow-hidden" data-category="web"
+                        data-filename="Plomberie.png" data-full-src="images/Plomberie d'Excellence Service Premium.png">
+                        <img src="images/Plomberie.png" alt="Site Web Plomberie" class="w-full h-64 object-cover">
+                        <div class="portfolio-overlay">
+                            <h3 class="text-xl font-bold text-white mb-2">Site Vitrine - Plomberie</h3>
+                            <p class="text-gray-300 text-center px-4 mb-4">Génération de leads qualifiés : +180%</p>
+                            <button
+                                class="view-project-btn px-4 py-2 bg-blue-500 rounded-full text-sm font-semibold">Voir
+                                le projet</button>
+                        </div>
+                    </div>
+
+                    <!-- 4. ZenTouch Boutique.png (E-commerce) -->
+                    <div class="portfolio-item rounded-xl overflow-hidden" data-category="ecommerce"
+                        data-filename="ZenTouch Boutique.png"
+                        data-full-src="images/ZenTouch Boutique d'accessoires de massage & auto-soins.png">
+                        <img src="images/ZenTouch Boutique.png" alt="ZenTouch Boutique" class="w-full h-64 object-cover">
+                        <div class="portfolio-overlay">
+                            <h3 class="text-xl font-bold text-white mb-2">Boutique ZenTouch</h3>
+                            <p class="text-gray-300 text-center px-4 mb-4">Ventes en ligne boostées de +120% en 3 mois
+                            </p>
+                            <button
+                                class="view-project-btn px-4 py-2 bg-blue-500 rounded-full text-sm font-semibold">Voir
+                                le projet</button>
+                        </div>
+                    </div>
+
+                    <!-- 5. chatgptbussiness.png (Branding - ou autre catégorie pertinente si vous avez un full-screen différent) -->
+                    <div class="portfolio-item rounded-xl overflow-hidden" data-category="branding"
+                        data-filename="chatgptbussiness.png" data-full-src="images/chatgptbussiness.png">
+                        <img src="images/chatgptbussiness.png" alt="ChatGPT Business" class="w-full h-64 object-cover">
+                        <div class="portfolio-overlay">
+                            <h3 class="text-xl font-bold text-white mb-2">Miniature YouTube</h3>
+                            <p class="text-gray-300 text-center px-4 mb-4">Engagement vidéo amélioré de +80%</p>
+                            <button
+                                class="view-project-btn px-4 py-2 bg-blue-500 rounded-full text-sm font-semibold">Voir
+                                le projet</button>
+                        </div>
+                    </div>
+
+                    <!-- 6. Bébé D'Or.png (E-commerce) -->
+                    <div class="portfolio-item rounded-xl overflow-hidden" data-category="ecommerce"
+                        data-filename="Bébé D'Or.png"
+                        data-full-src="images/Bébé D'Or - Boutique Premium pour Bébés.png">
+                        <img src="images/Bébé D'Or.png" alt="Bébé D'Or" class="w-full h-64 object-cover">
+                        <div class="portfolio-overlay">
+                            <h3 class="text-xl font-bold text-white mb-2">Boutique Bébé D'Or</h3>
+                            <p class="text-gray-300 text-center px-4 mb-4">Chiffre d'affaires e-commerce : +90%</p>
+                            <button
+                                class="view-project-btn px-4 py-2 bg-blue-500 rounded-full text-sm font-semibold">Voir
+                                le projet</button>
+                        </div>
+                    </div>
+
+                    <!-- NOUVELLES IMAGES AJOUTÉES ICI -->
+                    <div class="portfolio-item rounded-xl overflow-hidden" data-category="web"
+                        data-filename="Éclat Beauté Centre.png"
+                        data-full-src="images/Éclat Beauté Centre Esthétique Haut de Gamme.png" style="display: none;">
+                        <img src="images/Éclat Beauté Centre.png" alt="site beauté" class="w-full h-64 object-cover">
+                        <div class="portfolio-overlay">
+                            <h3 class="text-xl font-bold text-white mb-2">Site Centre Éclat Beauté</h3>
+                            <p class="text-gray-300 text-center px-4 mb-4">Réservations en ligne augmentées de +100%</p>
+                            <button
+                                class="view-project-btn px-4 py-2 bg-blue-500 rounded-full text-sm font-semibold">Voir
+                                le projet</button>
+                        </div>
+                    </div>
+                    <div class="portfolio-item rounded-xl overflow-hidden" data-category="ecommerce"
+                        data-filename="Boutique cosmétique.png"
+                        data-full-src="images/Boutique cosmétique 100_ naturelle PureNature.png" style="display: none;">
+                        <img src="images/Boutique cosmétique.png" alt="E-commerce project" class="w-full h-64 object-cover">
+                        <div class="portfolio-overlay">
+                            <h3 class="text-xl font-bold text-white mb-2">Boutique Cosmétique</h3>
+                            <p class="text-gray-300 text-center px-4 mb-4">Panier moyen e-commerce : +40%</p>
+                            <button
+                                class="view-project-btn px-4 py-2 bg-blue-500 rounded-full text-sm font-semibold">Voir
+                                le projet</button>
+                        </div>
+                    </div>
+                    <!-- FIN NOUVELLES IMAGES -->
+
+                    <!-- Tous les autres éléments portfolio-item d'origine.
+                         Ils sont masqués par défaut et seront affichés par les filtres de catégorie. -->
+                    <div class="portfolio-item rounded-xl overflow-hidden" data-category="web" data-filename="waps.png"
+                        data-full-src="images/WASP - Système de Détection d'Intrusion Intelligent.png"
+                        style="display: none;">
+                        <img src="images/waps.png" alt="Boutique de cosmétiques" class="w-full h-64 object-cover">
+                        <div class="portfolio-overlay">
+                            <h3 class="text-xl font-bold text-white mb-2 text-center">Landing page - Système de
+                                Détection</h3>
+                            <p class="text-gray-300 text-center px-4 mb-4">Taux de conversion de +200% de leads
+                                qualifiés</p>
+                            <button
+                                class="view-project-btn px-4 py-2 bg-blue-500 rounded-full text-sm font-semibold">Voir
+                                le projet</button>
+                        </div>
+                    </div>
+                    <div class="portfolio-item rounded-xl overflow-hidden" data-category="branding"
+                        data-filename="mindset.png" data-full-src="images/mindset.png" style="display: none;">
+                        <img src="images/mindset.png" alt="Branding Mindset" class="w-full h-64 object-cover">
+                        <div class="portfolio-overlay">
+                            <h3 class="text-xl font-bold text-white mb-2">Miniature Youtube - Mindset </h3>
+                            <p class="text-gray-300 text-center px-4 mb-4">Miniatures : Taux de clics (CTR) amélioré de
+                                +70%</p>
+                            <button
+                                class="view-project-btn px-4 py-2 bg-blue-500 rounded-full text-sm font-semibold">Voir
+                                le projet</button>
+                        </div>
+                    </div>
+                    <div class="portfolio-item rounded-xl overflow-hidden" data-category="tunnel"
+                        data-filename="iabusinesspro.png"
+                        data-full-src="images/Intégrez l'IA dans votre business Gagnez du temps et scalez.png"
+                        style="display: none;">
+                        <img src="images/iabusinesspro.png" alt="Tunnel IA Business Pro" class="w-full h-64 object-cover">
+                        <div class="portfolio-overlay">
+                            <h3 class="text-xl font-bold text-white mb-2">Tunnel IA Business Pro</h3>
+                            <p class="text-gray-300 text-center px-4 mb-4">Acquisition de leads : +300% de conversions
+                            </p>
+                            <button
+                                class="view-project-btn px-4 py-2 bg-blue-500 rounded-full text-sm font-semibold">Voir
+                                le projet</button>
+                        </div>
+                    </div>
+                    <div class="portfolio-item rounded-xl overflow-hidden" data-category="tunnel"
+                        data-filename="Devenir Freelance Tech.png"
+                        data-full-src="images/Devenir Freelance Tech - Libérez votre potentiel.png"
+                        style="display: none;">
+                        <img src="images/Devenir Freelance Tech.png" alt="Tunnel Devenir Freelance Tech"
+                            class="w-full h-64 object-cover">
+                        <div class="portfolio-overlay">
+                            <h3 class="text-xl font-bold text-white mb-2">Tunnel Devenir Freelance Tech</h3>
+                            <p class="text-gray-300 text-center px-4 mb-4">Inscriptions à la formation : +220%</p>
+                            <button
+                                class="view-project-btn px-4 py-2 bg-blue-500 rounded-full text-sm font-semibold">Voir
+                                le projet</button>
+                        </div>
+                    </div>
+                    <div class="portfolio-item rounded-xl overflow-hidden" data-category="web" data-filename="Space.png"
+                        data-full-src="images/interactive Space Explorer.png" style="display: none;">
+                        <img src="images/Space.png" alt="Site Web Space" class="w-full h-64 object-cover">
+                        <div class="portfolio-overlay">
+                            <h3 class="text-xl font-bold text-white mb-2">Landing page Space</h3>
+                            <p class="text-gray-300 text-center px-4 mb-4">Interactions utilisateurs : +180%</p>
+                            <button
+                                class="view-project-btn px-4 py-2 bg-blue-500 rounded-full text-sm font-semibold">Voir
+                                le projet</button>
+                        </div>
+                    </div>
+                    <div class="portfolio-item rounded-xl overflow-hidden" data-category="ecommerce"
+                        data-filename="Vert & Home.png"
+                        data-full-src="images/Vert & Home - Plantes & Décoration Intérieure.png" style="display: none;">
+                        <img src="images/Vert & Home.png" alt="Boutique Vert & Home" class="w-full h-64 object-cover">
+                        <div class="portfolio-overlay">
+                            <h3 class="text-xl font-bold text-white mb-2">Boutique Vert & Home</h3>
+                            <p class="text-gray-300 text-center px-4 mb-4">Taux de rétention client : +60%</p>
+                            <button
+                                class="view-project-btn px-4 py-2 bg-blue-500 rounded-full text-sm font-semibold">Voir
+                                le projet</button>
+                        </div>
+                    </div>
+                    <div class="portfolio-item rounded-xl overflow-hidden" data-category="ecommerce"
+                        data-filename="LUXE JARDIN.png"
+                        data-full-src="images/LUXE JARDIN - Boutique Premium d'Aménagement Extérieur.png"
+                        style="display: none;">
+                        <img src="images/LUXE JARDIN.png" alt="Boutique Luxe Jardin" class="w-full h-64 object-cover">
+                        <div class="portfolio-overlay">
+                            <h3 class="text-xl font-bold text-white mb-2">Boutique Luxe Jardin</h3>
+                            <p class="text-gray-300 text-center px-4 mb-4">Ventes de produits extérieurs : +110%</p>
+                            <button
+                                class="view-project-btn px-4 py-2 bg-blue-500 rounded-full text-sm font-semibold">Voir
+                                le projet</button>
+                        </div>
+                    </div>
+                    <div class="portfolio-item rounded-xl overflow-hidden" data-category="ecommerce"
+                        data-filename="L'Atelier Parisien.png"
+                        data-full-src="images/L'Atelier Parisien - Bijoux Artisanaux de Luxe.png"
+                        style="display: none;">
+                        <img src="images/L'Atelier Parisien.png" alt="Boutique L'Atelier Parisien"
+                            class="w-full h-64 object-cover">
+                        <div class="portfolio-overlay">
+                            <h3 class="text-xl font-bold text-white mb-2">Boutique L'Atelier Parisien</h3>
+                            <p class="text-gray-300 text-center px-4 mb-4">Conversions de bijoux : +75%</p>
+                            <button
+                                class="view-project-btn px-4 py-2 bg-blue-500 rounded-full text-sm font-semibold">Voir
+                                le projet</button>
+                        </div>
+                    </div>
+                    <div class="portfolio-item rounded-xl overflow-hidden" data-category="web"
+                        data-filename="biere-stock-guardian.png"
+                        data-full-src="images/biere-stock-guardianpagecomplet.png" style="display: none;">
+                        <img src="images/biere-stock-guardian.png" alt="Site Bière Stock Guardian"
+                            class="w-full h-64 object-cover">
+                        <div class="portfolio-overlay">
+                            <h3 class="text-xl font-bold text-white mb-2 text-center">Application de Gestion Stock -
+                                Brasserie</h3>
+                            <p class="text-300 text-center px-4 mb-4">Optimisation des stocks : -25% de pertes</p>
+                            <button
+                                class="view-project-btn px-4 py-2 bg-blue-500 rounded-full text-sm font-semibold">Voir
+                                le projet</button>
+                        </div>
+                    </div>
+                    <div class="portfolio-item rounded-xl overflow-hidden" data-category="web"
+                        data-filename="Dashboard Admin.png"
+                        data-full-src="images/Dashboard Admin - Agence Multiservice.png" style="display: none;">
+                        <img src="images/Dashboard Admin.png" alt="Dashboard Admin" class="w-full h-64 object-cover">
+                        <div class="portfolio-overlay">
+                            <h3 class="text-xl font-bold text-white mb-2 text-center">Dashboard Admin - Agence
+                                Multiservice</h3>
+                            <p class="text-gray-300 text-center px-4 mb-4">Efficacité de gestion : +40%</p>
+                            <button
+                                class="view-project-btn px-4 py-2 bg-blue-500 rounded-full text-sm font-semibold">Voir
+                                le projet</button>
+                        </div>
+                    </div>
+                    <div class="portfolio-item rounded-xl overflow-hidden" data-category="web"
+                        data-filename="Foxploit.png"
+                        data-full-src="images/Foxploit - Dashboard Cybersécurité Offensive.png" style="display: none;">
+                        <img src="images/Foxploit.png" alt="Site Web Foxploit" class="w-full h-64 object-cover">
+                        <div class="portfolio-overlay">
+                            <h3 class="text-xl font-bold text-white mb-2 text-center">Dashboard - Application de
+                                pentesting</h3>
+                            <p class="text-gray-300 text-center px-4 mb-4">Visibilité des opportunités augmentée de
+                                +150%</p>
+                            <button
+                                class="view-project-btn px-4 py-2 bg-blue-500 rounded-full text-sm font-semibold">Voir
+                                le projet</button>
+                        </div>
+                    </div>
+                    <div class="portfolio-item rounded-xl overflow-hidden" data-category="web"
+                        data-filename="LeadFlow.png" data-full-src="images/LeadFlow - Tableau de bord.png"
+                        style="display: none;">
+                        <img src="images/LeadFlow.png" alt="Site Web LeadFlow" class="w-full h-64 object-cover">
+                        <div class="portfolio-overlay">
+                            <h3 class="text-xl font-bold text-white mb-2 text-center">Dashboard - Gestionnaire de Leads
+                            </h3>
+                            <p class="text-gray-300 text-center px-4 mb-4">Trafic organique multiplié par 2.5</p>
+                            <button
+                                class="view-project-btn px-4 py-2 bg-blue-500 rounded-full text-sm font-semibold">Voir
+                                le projet</button>
+                        </div>
+                    </div>
+                    <div class="portfolio-item rounded-xl overflow-hidden" data-category="web"
+                        data-filename="SitePourLesNuls.png"
+                        data-full-src="images/SitePourLesNuls - Crée ton site pro sans coder.png"
+                        style="display: none;">
+                        <img src="images/SitePourLesNuls.png" alt="Site Web SitePourLesNuls" class="w-full h-64 object-cover">
+                        <div class="portfolio-overlay">
+                            <h3 class="text-xl font-bold text-white mb-2 text-center">Landing page - SitePourLesNuls
+                            </h3>
+                            <p class="text-gray-300 text-center px-4 mb-4">Taux d'inscription à la plateforme augmenté
+                                de +180%</p>
+                            <button
+                                class="view-project-btn px-4 py-2 bg-blue-500 rounded-full text-sm font-semibold">Voir
+                                le projet</button>
+                        </div>
+                    </div>
+                    <div class="portfolio-item rounded-xl overflow-hidden" data-category="web"
+                        data-filename="NexaFinance.png"
+                        data-full-src="images/NexaFinance Prêt en ligne nouvelle génération.png" style="display: none;">
+                        <img src="images/NexaFinance.png" alt="Site Web NexaFinance" class="w-full h-64 object-cover">
+                        <div class="portfolio-overlay">
+                            <h3 class="text-xl font-bold text-white mb-2 text-center">Site Bancaire - NexaFinance</h3>
+                            <p class="text-gray-300 text-center px-4 mb-4"> Plus de 500 demandes de prêt enregistrées en
+                                6 mois</p>
+                            <button
+                                class="view-project-btn px-4 py-2 bg-blue-500 rounded-full text-sm font-semibold">Voir
+                                le projet</button>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
+
     <!-- Testimonials Section -->
-     <!-- Testimonials Section -->
     <section id="testimonials" class="py-20 bg-black overflow-hidden">
         <div class="container mx-auto px-6">
             <h2 class="text-3xl md:text-5xl font-bold text-center mb-4 glow-effect">
-                Ils ont testé, <span class="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-blue-500">voilà ce qu'ils en pensent</span>
+                Ils ont testé, <span
+                    class="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-blue-500">voilà ce qu'ils
+                    en pensent</span>
             </h2>
             <p class="text-xl text-center text-gray-400 mb-12 max-w-3xl mx-auto">
                 Des entrepreneurs comme vous partagent leur expérience avec nos solutions.
             </p>
-            
+
             <div class="relative h-[600px] overflow-hidden">
                 <div class="marquee absolute left-0 top-0 w-full">
                     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                         <!-- Testimonial 1 -->
-                        <div class="testimonial-card rounded-xl p-6 hover:scale-[1.02] transition-transform duration-300 h-48">
+                        <div
+                            class="testimonial-card rounded-xl p-6 hover:scale-[1.02] transition-transform duration-300 h-48">
                             <div class="flex items-center mb-4">
-                                <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Client" class="w-12 h-12 rounded-full mr-4">
+                                <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Client"
+                                    class="w-12 h-12 rounded-full mr-4">
                                 <div>
                                     <h4 class="font-bold">Sarah L.</h4>
                                     <p class="text-sm text-purple-400">Fondatrice - Beauté Naturelle</p>
                                 </div>
                             </div>
-                            <p class="text-gray-300">"Notre boutique en ligne a vu ses ventes augmenter de 180% en 2 mois seulement. Une transformation incroyable !"</p>
+                            <p class="text-gray-300">"Notre boutique en ligne a vu ses ventes augmenter de 180% en 2
+                                mois seulement. Une transformation incroyable !"</p>
                         </div>
-                        
+
                         <!-- Testimonial 2 -->
-                        <div class="testimonial-card rounded-xl p-6 hover:scale-[1.02] transition-transform duration-300 h-64">
+                        <div
+                            class="testimonial-card rounded-xl p-6 hover:scale-[1.02] transition-transform duration-300 h-64">
                             <div class="flex items-center mb-4">
-                                <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Client" class="w-12 h-12 rounded-full mr-4">
+                                <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Client"
+                                    class="w-12 h-12 rounded-full mr-4">
                                 <div>
                                     <h4 class="font-bold">Marc D.</h4>
                                     <p class="text-sm text-blue-400">Coach Sportif</p>
                                 </div>
                             </div>
-                            <p class="text-gray-300">"Grâce à leur tunnel de vente, j'ai multiplié mes inscriptions par 5 sans augmenter mon budget pub. Leur approche data-driven fait toute la différence."</p>
+                            <p class="text-gray-300">"Grâce à leur tunnel de vente, j'ai multiplié mes inscriptions par
+                                5 sans augmenter mon budget pub. Leur approche data-driven fait toute la différence."
+                            </p>
                             <div class="mt-4 flex items-center">
                                 <i class="fas fa-star text-yellow-400 mr-1"></i>
                                 <i class="fas fa-star text-yellow-400 mr-1"></i>
@@ -523,65 +895,78 @@
                                 <i class="fas fa-star text-yellow-400"></i>
                             </div>
                         </div>
-                        
+
                         <!-- Testimonial 3 -->
-                        <div class="testimonial-card rounded-xl p-6 hover:scale-[1.02] transition-transform duration-300 h-56">
+                        <div
+                            class="testimonial-card rounded-xl p-6 hover:scale-[1.02] transition-transform duration-300 h-56">
                             <div class="flex items-center mb-4">
-                                <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Client" class="w-12 h-12 rounded-full mr-4">
+                                <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Client"
+                                    class="w-12 h-12 rounded-full mr-4">
                                 <div>
                                     <h4 class="font-bold">Élodie T.</h4>
                                     <p class="text-sm text-purple-400">Restauratrice</p>
                                 </div>
                             </div>
-                            <p class="text-gray-300">"En 3 semaines, mon restaurant est passé de 2 à 4.8 étoiles sur Google et nos réservations ont doublé. Magique !"</p>
+                            <p class="text-gray-300">"En 3 semaines, mon restaurant est passé de 2 à 4.8 étoiles sur
+                                Google et nos réservations ont doublé. Magique !"</p>
                         </div>
-                        
+
                         <!-- Testimonial 4 -->
-                        <div class="testimonial-card rounded-xl p-6 hover:scale-[1.02] transition-transform duration-300 h-48">
+                        <div
+                            class="testimonial-card rounded-xl p-6 hover:scale-[1.02] transition-transform duration-300 h-48">
                             <div class="flex items-center mb-4">
-                                <img src="https://randomuser.me/api/portraits/men/75.jpg" alt="Client" class="w-12 h-12 rounded-full mr-4">
+                                <img src="https://randomuser.me/api/portraits/men/75.jpg" alt="Client"
+                                    class="w-12 h-12 rounded-full mr-4">
                                 <div>
                                     <h4 class="font-bold">Thomas P.</h4>
                                     <p class="text-sm text-blue-400">Formateur en ligne</p>
                                 </div>
                             </div>
-                            <p class="text-gray-300">"Leur audit a révélé des problèmes que je n'avais même pas imaginés. 6 mois plus tard, mon CA a triplé."</p>
+                            <p class="text-gray-300">"Leur audit a révélé des problèmes que je n'avais même pas
+                                imaginés. 6 mois plus tard, mon CA a triplé."</p>
                         </div>
-                        
+
                         <!-- Testimonial 5 -->
-                        <div class="testimonial-card rounded-xl p-6 hover:scale-[1.02] transition-transform duration-300 h-64">
+                        <div
+                            class="testimonial-card rounded-xl p-6 hover:scale-[1.02] transition-transform duration-300 h-64">
                             <div class="flex items-center mb-4">
-                                <img src="https://randomuser.me/api/portraits/women/33.jpg" alt="Client" class="w-12 h-12 rounded-full mr-4">
+                                <img src="https://randomuser.me/api/portraits/women/33.jpg" alt="Client"
+                                    class="w-12 h-12 rounded-full mr-4">
                                 <div>
                                     <h4 class="font-bold">Camille R.</h4>
                                     <p class="text-sm text-purple-400">Créatrice de bijoux</p>
                                 </div>
                             </div>
-                            <p class="text-gray-300">"Leur stratégie de contenu a complètement transformé mon Instagram. De 200 à 5000 followers en 4 mois, avec des ventes quotidiennes maintenant."</p>
+                            <p class="text-gray-300">"Leur stratégie de contenu a complètement transformé mon Instagram.
+                                De 200 à 5000 followers en 4 mois, avec des ventes quotidiennes maintenant."</p>
                             <div class="mt-4">
                                 <span class="text-xs bg-blue-900 text-blue-300 px-2 py-1 rounded">+2400% ROI</span>
                             </div>
                         </div>
-                        
+
                         <!-- Testimonial 6 -->
-                        <div class="testimonial-card rounded-xl p-6 hover:scale-[1.02] transition-transform duration-300 h-56">
+                        <div
+                            class="testimonial-card rounded-xl p-6 hover:scale-[1.02] transition-transform duration-300 h-56">
                             <div class="flex items-center mb-4">
-                                <img src="https://randomuser.me/api/portraits/men/44.jpg" alt="Client" class="w-12 h-12 rounded-full mr-4">
+                                <img src="https://randomuser.me/api/portraits/men/44.jpg" alt="Client"
+                                    class="w-12 h-12 rounded-full mr-4">
                                 <div>
                                     <h4 class="font-bold">Alexandre G.</h4>
                                     <p class="text-sm text-blue-400">Consultant</p>
                                 </div>
                             </div>
-                            <p class="text-gray-300">"Ils ont automatisé 80% de mon processus de vente. Je gagne du temps et convertis mieux. Un combo parfait."</p>
+                            <p class="text-gray-300">"Ils ont automatisé 80% de mon processus de vente. Je gagne du
+                                temps et convertis mieux. Un combo parfait."</p>
                         </div>
                     </div>
                 </div>
-                
+
                 <div class="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-t from-black to-transparent z-10"></div>
             </div>
-            
+
             <div class="text-center mt-12">
-                <a href="#" class="btn-neon btn-purple px-8 py-4 rounded-full text-lg font-semibold inline-flex items-center space-x-3">
+                <a href="https://m.me/718880621299556?ref=w42216004"
+                    class="btn-neon btn-purple px-8 py-4 rounded-full text-lg font-semibold inline-flex items-center space-x-3">
                     <i class="fab fa-facebook-messenger"></i>
                     <span>Demandez votre stratégie gratuite</span>
                 </a>
@@ -593,72 +978,84 @@
     <section id="faq" class="py-20 bg-gradient-to-b from-purple-900 to-blue-900">
         <div class="container mx-auto px-6">
             <h2 class="text-3xl md:text-5xl font-bold text-center mb-4 glow-effect">
-                Questions <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500">fréquentes</span>
+                Questions <span
+                    class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500">fréquentes</span>
             </h2>
             <p class="text-xl text-center text-gray-300 mb-12 max-w-3xl mx-auto">
                 Tout ce que vous devez savoir avant de nous contacter.
             </p>
-            
+
             <div class="max-w-3xl mx-auto space-y-4">
                 <!-- FAQ Item 1 -->
-            <div class="faq-item rounded-xl p-6 cursor-pointer group">
-                <div class="flex justify-between items-center">
-                    <h3 class="text-lg font-semibold text-white group-hover:text-blue-300 transition">
-                         Et si je ne sais pas par où commencer ?
-                    </h3>
-                    <i class="fas fa-chevron-down text-purple-300 transform group-hover:rotate-180 transition-transform"></i>
+                <div class="faq-item rounded-xl p-6 cursor-pointer group">
+                    <div class="flex justify-between items-center">
+                        <h3 class="text-lg font-semibold text-white group-hover:text-blue-300 transition">
+                            Et si je ne sais pas par où commencer ?
+                        </h3>
+                        <i
+                            class="fas fa-chevron-down text-purple-300 transform group-hover:rotate-180 transition-transform"></i>
+                    </div>
+                    <div class="faq-answer mt-4 hidden text-gray-300">
+                        <p>Pas besoin d’avoir une stratégie parfaite. On analyse votre situation et on vous guide étape
+                            par étape pour maximiser l’impact dès le départ.</p>
+                    </div>
                 </div>
-                <div class="faq-answer mt-4 hidden text-gray-300">
-                    <p>Pas besoin d’avoir une stratégie parfaite. On analyse votre situation et on vous guide étape par étape pour maximiser l’impact dès le départ.</p>
-                </div>
-            </div>
 
-            <!-- FAQ Item 2 -->
-            <div class="faq-item rounded-xl p-6 cursor-pointer group">
-                <div class="flex justify-between items-center">
-                    <h3 class="text-lg font-semibold text-white group-hover:text-blue-300 transition">
-                        Est-ce que vous travaillez avec des petits business ou des indépendants ?
-                    </h3>
-                    <i class="fas fa-chevron-down text-purple-300 transform group-hover:rotate-180 transition-transform"></i>
+                <!-- FAQ Item 2 -->
+                <div class="faq-item rounded-xl p-6 cursor-pointer group">
+                    <div class="flex justify-between items-center">
+                        <h3 class="text-lg font-semibold text-white group-hover:text-blue-300 transition">
+                            Est-ce que vous travaillez avec des petits business ou des indépendants ?
+                        </h3>
+                        <i
+                            class="fas fa-chevron-down text-purple-300 transform group-hover:rotate-180 transition-transform"></i>
+                    </div>
+                    <div class="faq-answer mt-4 hidden text-gray-300">
+                        <p>Absolument. On accompagne les entrepreneurs locaux, artisans, coaches, freelances,
+                            commerçants, créateurs de contenu et même les PME.</p>
+                        <p class="mt-2">Chaque stratégie est 100% adaptée à votre métier, votre budget et votre vision.
+                            Pas besoin d’être une grande entreprise pour avoir un marketing qui fait vendre.</p>
+                    </div>
                 </div>
-                <div class="faq-answer mt-4 hidden text-gray-300">
-                    <p>Absolument. On accompagne les entrepreneurs locaux, artisans, coaches, freelances, commerçants, créateurs de contenu et même les PME.</p>
-                    <p class="mt-2">Chaque stratégie est 100% adaptée à votre métier, votre budget et votre vision. Pas besoin d’être une grande entreprise pour avoir un marketing qui fait vendre.</p>
-                </div>
-            </div>
 
-            <!-- FAQ Item 3 -->
-            <div class="faq-item rounded-xl p-6 cursor-pointer group">
-                <div class="flex justify-between items-center">
-                    <h3 class="text-lg font-semibold text-white group-hover:text-blue-300 transition">
-                        Combien de temps avant de voir des résultats ?
-                    </h3>
-                    <i class="fas fa-chevron-down text-purple-300 transform group-hover:rotate-180 transition-transform"></i>
+                <!-- FAQ Item 3 -->
+                <div class="faq-item rounded-xl p-6 cursor-pointer group">
+                    <div class="flex justify-between items-center">
+                        <h3 class="text-lg font-semibold text-white group-hover:text-blue-300 transition">
+                            Combien de temps avant de voir des résultats ?
+                        </h3>
+                        <i
+                            class="fas fa-chevron-down text-purple-300 transform group-hover:rotate-180 transition-transform"></i>
+                    </div>
+                    <div class="faq-answer mt-4 hidden text-gray-300">
+                        <p>Tout dépend du service choisi. Une campagne bien faite ou une optimisation peut générer des
+                            résultats en quelques jours. </p>
+                        <p class="mt-2">Un tunnel ou un site ? Quelques semaines bien investies.</p>
+                    </div>
                 </div>
-                <div class="faq-answer mt-4 hidden text-gray-300">
-                    <p>Tout dépend du service choisi. Une campagne bien faite ou une optimisation peut générer des résultats en quelques jours. </p>
-                    <p class="mt-2">Un tunnel ou un site ? Quelques semaines bien investies.</p>
-                </div>
-            </div>
 
-            <!-- FAQ Item 4 -->
-            <div class="faq-item rounded-xl p-6 cursor-pointer group">
-                <div class="flex justify-between items-center">
-                    <h3 class="text-lg font-semibold text-white group-hover:text-blue-300 transition">
-                        J’ai déjà un site / une pub, ça sert à quoi de refaire ?
-                    </h3>
-                    <i class="fas fa-chevron-down text-purple-300 transform group-hover:rotate-180 transition-transform"></i>
-                </div>
-                <div class="faq-answer mt-4 hidden text-gray-300">
-                    <p>Avoir quelque chose en ligne ne suffit plus. On transforme ce que vous avez pour qu’il travaille vraiment pour vous, 24h/24.</p>
-                </div>
-            </div>
-                
                 <!-- FAQ Item 4 -->
                 <div class="faq-item rounded-xl p-6 cursor-pointer group">
                     <div class="flex justify-between items-center">
-                        <h3 class="text-lg font-semibold text-white group-hover:text-blue-300 transition">Comment mesurez-vous les résultats ?</h3>
-                        <i class="fas fa-chevron-down text-purple-300 transform group-hover:rotate-180 transition-transform"></i>
+                        <h3 class="text-lg font-semibold text-white group-hover:text-blue-300 transition">
+                            J’ai déjà un site / une pub, ça sert à quoi de refaire ?
+                        </h3>
+                        <i
+                            class="fas fa-chevron-down text-purple-300 transform group-hover:rotate-180 transition-transform"></i>
+                    </div>
+                    <div class="faq-answer mt-4 hidden text-gray-300">
+                        <p>Avoir quelque chose en ligne ne suffit plus. On transforme ce que vous avez pour qu’il
+                            travaille vraiment pour vous, 24h/24.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 4 -->
+                <div class="faq-item rounded-xl p-6 cursor-pointer group">
+                    <div class="flex justify-between items-center">
+                        <h3 class="text-lg font-semibold text-white group-hover:text-blue-300 transition">Comment
+                            mesurez-vous les résultats ?</h3>
+                        <i
+                            class="fas fa-chevron-down text-purple-300 transform group-hover:rotate-180 transition-transform"></i>
                     </div>
                     <div class="faq-answer mt-4 hidden text-gray-300">
                         <p>Nous utilisons des outils professionnels pour suivre chaque métrique :</p>
@@ -671,74 +1068,87 @@
                         <p class="mt-2">Vous recevez un dashboard personnalisé avec vos KPI en temps réel.</p>
                     </div>
                 </div>
-                
+
                 <!-- FAQ Item 5 -->
                 <div class="faq-item rounded-xl p-6 cursor-pointer group">
                     <div class="flex justify-between items-center">
-                        <h3 class="text-lg font-semibold text-white group-hover:text-blue-300 transition">Travaillez-vous avec des entreprises en dehors de la France ?</h3>
-                        <i class="fas fa-chevron-down text-purple-300 transform group-hover:rotate-180 transition-transform"></i>
+                        <h3 class="text-lg font-semibold text-white group-hover:text-blue-300 transition">
+                            Travaillez-vous avec des entreprises en dehors de la France ?</h3>
+                        <i
+                            class="fas fa-chevron-down text-purple-300 transform group-hover:rotate-180 transition-transform"></i>
                     </div>
                     <div class="faq-answer mt-4 hidden text-gray-300">
-                        <p>Oui, nous avons des clients en Belgique, Suisse, Luxembourg et Canada. Nous adaptons nos stratégies selon :</p>
+                        <p>Oui, nous avons des clients en Belgique, Suisse, Luxembourg et Canada. Nous adaptons nos
+                            stratégies selon :</p>
                         <ul class="list-disc pl-5 mt-2 space-y-1">
                             <li>Le marché local et la concurrence</li>
                             <li>Les plateformes dominantes dans votre région</li>
                             <li>Les comportements d'achat spécifiques</li>
                             <li>Les réglementations locales</li>
                         </ul>
-                        <p class="mt-2">Nos solutions sont conçues pour s'adapter à différents contextes culturels et économiques.</p>
+                        <p class="mt-2">Nos solutions sont conçues pour s'adapter à différents contextes culturels et
+                            économiques.</p>
                     </div>
                 </div>
                 <!-- FAQ Item 5 -->
-            <div class="faq-item rounded-xl p-6 cursor-pointer group">
-                <div class="flex justify-between items-center">
-                    <h3 class="text-lg font-semibold text-white group-hover:text-blue-300 transition">
-                         Est-ce que je suis accompagné(e) après la livraison ?
-                    </h3>
-                    <i class="fas fa-chevron-down text-purple-300 transform group-hover:rotate-180 transition-transform"></i>
+                <div class="faq-item rounded-xl p-6 cursor-pointer group">
+                    <div class="flex justify-between items-center">
+                        <h3 class="text-lg font-semibold text-white group-hover:text-blue-300 transition">
+                            Est-ce que je suis accompagné(e) après la livraison ?
+                        </h3>
+                        <i
+                            class="fas fa-chevron-down text-purple-300 transform group-hover:rotate-180 transition-transform"></i>
+                    </div>
+                    <div class="faq-answer mt-4 hidden text-gray-300">
+                        <p>Oui, c’est même essentiel. On ne vous laisse jamais seul(e). Suivi, conseils, ajustements,
+                            tout est prévu pour assurer la continuité et la croissance.</p>
+                        <ul class="list-disc pl-5 mt-2 space-y-1">
+                            <li>Support gratuit pendant 30 jours</li>
+                            <li>Formations vidéo sur votre système</li>
+                            <li>Offre d'abonnement pour suivi + optimisation continue</li>
+                        </ul>
+                        <p class="mt-2">On n’est pas là pour “faire un site” : on est là pour vous aider à réussir.</p>
+                    </div>
                 </div>
-                <div class="faq-answer mt-4 hidden text-gray-300">
-                    <p>Oui, c’est même essentiel. On ne vous laisse jamais seul(e). Suivi, conseils, ajustements, tout est prévu pour assurer la continuité et la croissance.</p>
-                    <ul class="list-disc pl-5 mt-2 space-y-1">
-                        <li>Support gratuit pendant 30 jours</li>
-                        <li>Formations vidéo sur votre système</li>
-                        <li>Offre d'abonnement pour suivi + optimisation continue</li>
-                    </ul>
-                    <p class="mt-2">On n’est pas là pour “faire un site” : on est là pour vous aider à réussir.</p>
-                </div>
-            </div>
-            <!-- FAQ Item 5 -->
-            <div class="faq-item rounded-xl p-6 cursor-pointer group">
-                <div class="flex justify-between items-center">
-                    <h3 class="text-lg font-semibold text-white group-hover:text-blue-300 transition">
-                        Et si ça ne marche pas ?
-                    </h3>
-                    <i class="fas fa-chevron-down text-purple-300 transform group-hover:rotate-180 transition-transform"></i>
-                </div>
-                <div class="faq-answer mt-4 hidden text-gray-300">
-                    <p>On travaille avec transparence, données à l’appui. Si quelque chose ne fonctionne pas, on ajuste, on teste, on optimise.</p>
-                    <p class="mt-2">Pas de promesse en l’air : des résultats réels.</p>
+                <!-- FAQ Item 5 -->
+                <div class="faq-item rounded-xl p-6 cursor-pointer group">
+                    <div class="flex justify-between items-center">
+                        <h3 class="text-lg font-semibold text-white group-hover:text-blue-300 transition">
+                            Et si ça ne marche pas ?
+                        </h3>
+                        <i
+                            class="fas fa-chevron-down text-purple-300 transform group-hover:rotate-180 transition-transform"></i>
+                    </div>
+                    <div class="faq-answer mt-4 hidden text-gray-300">
+                        <p>On travaille avec transparence, données à l’appui. Si quelque chose ne fonctionne pas, on
+                            ajuste, on teste, on optimise.</p>
+                        <p class="mt-2">Pas de promesse en l’air : des résultats réels.</p>
 
+                    </div>
                 </div>
             </div>
-        </div>
     </section>
 
     <!-- Final CTA Section -->
     <section class="relative py-32 overflow-hidden">
         <div class="absolute inset-0 bg-gradient-to-r from-blue-900 to-purple-900 opacity-90"></div>
-        <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1516321318423-f06f85e504b3?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80')] bg-cover bg-center mix-blend-overlay"></div>
+        <div
+            class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1516321318423-f06f85e504b3?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80')] bg-cover bg-center mix-blend-overlay">
+        </div>
         <div class="container mx-auto px-6 relative z-10 text-center">
             <h2 class="text-4xl md:text-6xl font-bold mb-8 glow-effect">
                 On ne transforme pas que des pages web.<br>
-                <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500">On transforme des business.</span>
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500">On transforme
+                    des business.</span>
             </h2>
             <div class="flex flex-col sm:flex-row justify-center gap-6 mt-12">
-                <a href="#" class="btn-neon btn-purple px-10 py-5 rounded-full text-xl font-bold flex items-center justify-center space-x-4 transform hover:scale-105 transition-transform">
+                <a href="https://m.me/718880621299556?ref=w42216004"
+                    class="btn-neon btn-purple px-10 py-5 rounded-full text-xl font-bold flex items-center justify-center space-x-4 transform hover:scale-105 transition-transform">
                     <i class="fab fa-facebook-messenger text-2xl"></i>
                     <span>Discuter sur Messenger</span>
                 </a>
-                <a href="#" class="btn-neon btn-blue px-10 py-5 rounded-full text-xl font-bold flex items-center justify-center space-x-4 transform hover:scale-105 transition-transform">
+                <a href="https://ig.me/m/netp_ub?ref=w42213878"
+                    class="btn-neon btn-blue px-10 py-5 rounded-full text-xl font-bold flex items-center justify-center space-x-4 transform hover:scale-105 transition-transform">
                     <i class="fab fa-instagram text-2xl"></i>
                     <span>Nous contacter sur Instagram</span>
                 </a>
@@ -752,11 +1162,12 @@
             <div class="grid grid-cols-1 md:grid-cols-4 gap-12">
                 <div>
                     <h3 class="text-2xl font-bold mb-4">
-                        <span class="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-blue-500">Netpub</span>
+                        <span
+                            class="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-blue-500">Netpub</span>
                     </h3>
                     <p class="text-gray-400">Transformation digitale haut de gamme pour entrepreneurs ambitieux.</p>
                 </div>
-                
+
                 <div>
                     <h4 class="text-lg font-semibold text-white mb-4">Services</h4>
                     <ul class="space-y-2">
@@ -767,7 +1178,7 @@
                         <li><a href="#" class="text-gray-400 hover:text-blue-400 transition">Publicité</a></li>
                     </ul>
                 </div>
-                
+
                 <div>
                     <h4 class="text-lg font-semibold text-white mb-4">Entreprise</h4>
                     <ul class="space-y-2">
@@ -777,25 +1188,29 @@
                         <li><a href="#" class="text-gray-400 hover:text-purple-400 transition">Contact</a></li>
                     </ul>
                 </div>
-                
+
                 <div>
                     <h4 class="text-lg font-semibold text-white mb-4">Réseaux</h4>
                     <div class="flex space-x-4">
-                        <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center text-white hover:bg-blue-500 transition">
+                        <a href="https://m.me/718880621299556?ref=w42216004"
+                            class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center text-white hover:bg-blue-500 transition">
                             <i class="fab fa-facebook-messenger"></i>
                         </a>
-                        <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center text-white hover:bg-gradient-to-r from-purple-600 to-pink-600 transition">
+                        <a href="https://ig.me/m/netp_ub?ref=w42213878"
+                            class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center text-white hover:bg-gradient-to-r from-purple-600 to-pink-600 transition">
                             <i class="fab fa-instagram"></i>
                         </a>
-                        <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center text-white hover:bg-black transition">
+                        <a href="#"
+                            class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center text-white hover:bg-black transition">
                             <i class="fab fa-linkedin-in"></i>
                         </a>
                     </div>
                     <p class="mt-6 text-gray-400">Prêt à passer au niveau supérieur ?</p>
-                    <a href="#" class="inline-block mt-2 text-blue-400 font-semibold hover:underline">Contactez-nous</a>
+                    <a href="https://ig.me/m/netp_ub?ref=w42213878"
+                        class="inline-block mt-2 text-blue-400 font-semibold hover:underline">Contactez-nous</a>
                 </div>
             </div>
-            
+
             <div class="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
                 <p class="text-gray-500 text-sm">© 2025 Netpub. Tous droits réservés.</p>
                 <div class="flex space-x-6 mt-4 md:mt-0">
@@ -806,6 +1221,18 @@
             </div>
         </div>
     </footer>
+
+    <!-- Lightbox HTML -->
+    <div id="lightbox" class="fixed inset-0 bg-black bg-opacity-90 flex items-center justify-center z-[100] hidden">
+        <!-- Ajout de 'h-full' au conteneur direct de lightbox-content -->
+        <div class="relative max-w-5xl w-full mx-4 h-full">
+            <button id="lightbox-close" class="absolute top-4 right-4 text-white text-3xl">&times;</button>
+            <!-- Ce div permet le défilement vertical -->
+            <div id="lightbox-content" class="h-full overflow-y-auto">
+                <img src="" alt="Full size image" id="lightbox-img" class="max-w-full mx-auto">
+            </div>
+        </div>
+    </div>
 
     <!-- Scripts -->
     <script>
@@ -819,37 +1246,37 @@
         // Create particles
         const particlesGeometry = new THREE.BufferGeometry();
         const particleCount = 1000;
-        
+
         const posArray = new Float32Array(particleCount * 3);
-        for(let i = 0; i < particleCount * 3; i++) {
+        for (let i = 0; i < particleCount * 3; i++) {
             posArray[i] = (Math.random() - 0.5) * 10;
         }
-        
+
         particlesGeometry.setAttribute('position', new THREE.BufferAttribute(posArray, 3));
-        
+
         const particlesMaterial = new THREE.PointsMaterial({
             size: 0.02,
             color: 0x00f0ff,
             transparent: true,
             opacity: 0.8
         });
-        
+
         const particlesMesh = new THREE.Points(particlesGeometry, particlesMaterial);
         scene.add(particlesMesh);
-        
+
         camera.position.z = 3;
-        
+
         function animate() {
             requestAnimationFrame(animate);
-            
+
             particlesMesh.rotation.x += 0.0005;
             particlesMesh.rotation.y += 0.0005;
-            
+
             renderer.render(scene, camera);
         }
-        
+
         animate();
-        
+
         window.addEventListener('resize', () => {
             camera.aspect = window.innerWidth / window.innerHeight;
             camera.updateProjectionMatrix();
@@ -862,20 +1289,20 @@
         let count = 0;
         const duration = 2000; // ms
         const increment = target / (duration / 16);
-        
+
         const updateCount = () => {
             count += increment;
-            if(count < target) {
+            if (count < target) {
                 counter.textContent = Math.floor(count);
                 requestAnimationFrame(updateCount);
             } else {
                 counter.textContent = target;
             }
         };
-        
+
         // GSAP Animations
         gsap.registerPlugin(ScrollTrigger);
-        
+
         gsap.utils.toArray('.service-card').forEach(card => {
             gsap.from(card, {
                 scrollTrigger: {
@@ -888,25 +1315,25 @@
                 duration: 0.8
             });
         });
-        
+
         // FAQ Toggle
         document.querySelectorAll('.faq-item').forEach(item => {
             const question = item.querySelector('h3');
             const answer = item.querySelector('.faq-answer');
-            
+
             question.addEventListener('click', () => {
                 const isOpen = answer.classList.contains('hidden');
-                
+
                 // Close all other answers
                 document.querySelectorAll('.faq-answer').forEach(ans => {
-                    if(ans !== answer) {
+                    if (ans !== answer) {
                         ans.classList.add('hidden');
                         ans.previousElementSibling.querySelector('i').classList.remove('fa-chevron-up');
                         ans.previousElementSibling.querySelector('i').classList.add('fa-chevron-down');
                     }
                 });
-                
-                if(isOpen) {
+
+                if (isOpen) {
                     answer.classList.remove('hidden');
                     question.querySelector('i').classList.remove('fa-chevron-down');
                     question.querySelector('i').classList.add('fa-chevron-up');
@@ -918,36 +1345,141 @@
                 }
             });
         });
-        
-        // Portfolio Filter
-        document.querySelectorAll('.filter-btn').forEach(btn => {
-            btn.addEventListener('click', () => {
-                document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
-                btn.classList.add('active');
-                
-                const filter = btn.getAttribute('data-filter');
-                document.querySelectorAll('.portfolio-item').forEach(item => {
-                    if(filter === 'all' || item.getAttribute('data-category') === filter) {
-                        item.style.display = 'block';
-                        gsap.from(item, { opacity: 0, y: 20, duration: 0.5 });
-                    } else {
+
+        // JavaScript pour la fonctionnalité de la Lightbox
+        const lightbox = document.getElementById('lightbox');
+        const lightboxImg = document.getElementById('lightbox-img');
+        const lightboxClose = document.getElementById('lightbox-close');
+        const lightboxContent = document.getElementById('lightbox-content'); // Référence au conteneur défilable
+
+        document.querySelectorAll('.portfolio-item').forEach(item => {
+            item.querySelector('.view-project-btn').addEventListener('click', () => {
+                const fullSrc = item.getAttribute('data-full-src') || item.querySelector('img').src;
+                const category = item.getAttribute('data-category');
+
+                lightboxImg.src = fullSrc;
+                lightbox.classList.remove('hidden');
+                document.body.style.overflow = 'hidden'; // Empêche le défilement du corps derrière la lightbox
+
+                // Ajuste pour le contenu défilable (sites web/e-commerce/tunnels)
+                if (category === 'web' || category === 'ecommerce' || category === 'tunnel') {
+                    lightboxImg.style.maxHeight = 'none'; // Permet à l'image d'être plus grande que l'écran
+                    lightboxImg.style.height = 'auto'; // Assure que la hauteur s'ajuste au contenu
+                    lightboxContent.classList.add('overflow-y-auto'); // Active le défilement sur le div de contenu
+                    lightboxImg.style.width = '100%'; // Pleine largeur à l'intérieur du div de contenu
+                    lightboxImg.style.objectFit = 'contain'; // Contient l'image dans son rapport d'aspect
+                } else {
+                    // Pour les autres catégories (branding, publicité), l'image ne défile pas mais s'adapte à la hauteur de l'écran
+                    lightboxImg.style.maxHeight = '90vh';
+                    lightboxImg.style.width = 'auto';
+                    lightboxImg.style.objectFit = 'contain';
+                    lightboxContent.classList.remove('overflow-y-auto'); // Désactive le défilement si ce n'est pas nécessaire
+                }
+
+                // Ajuste la largeur pour les petits écrans (pleine largeur mobile)
+                if (window.innerWidth < 768) {
+                    lightboxImg.style.width = '100%';
+                    lightboxImg.style.height = 'auto';
+                } else {
+                    lightboxImg.style.maxWidth = '100%';
+                    lightboxImg.style.height = 'auto';
+                }
+            });
+        });
+
+        lightboxClose.addEventListener('click', () => {
+            lightbox.classList.add('hidden');
+            document.body.style.overflow = ''; // Restaure le défilement du corps
+            lightboxContent.scrollTo(0, 0); // Réinitialise la position de défilement pour la prochaine vue
+        });
+
+        lightbox.addEventListener('click', (e) => {
+            if (e.target === lightbox) { // Ferme quand on clique en dehors de l'image mais à l'intérieur de la lightbox
+                lightbox.classList.add('hidden');
+                document.body.style.overflow = '';
+                lightboxContent.scrollTo(0, 0); // Réinitialise la position de défilement
+            }
+        });
+
+        // Gestion de l'affichage initial et du filtrage du portfolio
+        document.addEventListener('DOMContentLoaded', () => {
+            const allPortfolioItems = document.querySelectorAll('.portfolio-item');
+
+            // Masque tous les éléments du portfolio au départ
+            allPortfolioItems.forEach(item => {
+                item.style.display = 'none';
+            });
+
+            // Les 6 images spécifiques dans l'ordre demandé (utilisant data-filename)
+            const desiredFilenames = [
+                'gagnépub.png',
+                'Masterclass Instagram.png',
+                'Plomberie.png',
+                'ZenTouch Boutique.png',
+                'chatgptbussiness.png',
+                'Bébé D\'Or.png'
+            ];
+
+            // Fonction pour afficher les 6 images spécifiques
+            const showDesiredItems = () => {
+                // D'abord, masquer tous les éléments pour éviter les doublons lors du re-filtrage
+                allPortfolioItems.forEach(item => {
+                    item.style.display = 'none';
+                });
+
+                desiredFilenames.forEach(filename => {
+                    const itemToShow = Array.from(allPortfolioItems).find(item => item.getAttribute('data-filename') === filename);
+                    if (itemToShow) {
+                        itemToShow.style.display = 'block';
+                        gsap.from(itemToShow, { opacity: 0, y: 20, duration: 0.5 });
+                    }
+                });
+            };
+
+            // Affiche les 6 éléments spécifiques au chargement initial
+            showDesiredItems();
+
+            // Portfolio Filter
+            document.querySelectorAll('.filter-btn').forEach(btn => {
+                btn.addEventListener('click', () => {
+                    document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+                    btn.classList.add('active');
+
+                    const filter = btn.getAttribute('data-filter');
+
+                    // Masque tous les éléments du portfolio avant d'appliquer le filtre
+                    allPortfolioItems.forEach(item => {
                         item.style.display = 'none';
+                    });
+
+                    if (filter === 'all') {
+                        // Si le filtre est "Tous", affiche uniquement les 6 images spécifiques dans l'ordre
+                        showDesiredItems();
+                    } else {
+                        // Pour les autres filtres, affiche tous les éléments correspondants à la catégorie
+                        allPortfolioItems.forEach(item => {
+                            if (item.getAttribute('data-category') === filter) {
+                                item.style.display = 'block';
+                                gsap.from(item, { opacity: 0, y: 20, duration: 0.5 });
+                            }
+                        });
                     }
                 });
             });
         });
-        
+
         // Start counter when in view
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
-                if(entry.isIntersecting) {
+                if (entry.isIntersecting) {
                     updateCount();
                     observer.unobserve(entry.target);
                 }
             });
         }, { threshold: 0.5 });
-        
+
         observer.observe(document.querySelector('.counter'));
     </script>
-        </body>
-    </html>
+</body>
+
+</html>
